@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style.css file-->
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+
+    <link rel="stylesheet" href="bootstrap-5.3.2/dist/css/bootstrap.css">
+
+   
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b style="color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;">M</b>P</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#profile">Promotion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+<div class="content-1">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">Plants to decorate your home, lots of interesting choices and get a 50% discount on purchases today, come on, don't miss it, make your choice now!</p>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><section id="profile"><h1 style="color: white; margin-left: 500px;">Price Sale !</h1></section>
+
+<div class="content-2">
+<div class="card">
+    <div class="card-body" style="width: 400px; height: 200px;">
+      <h5 class="card-title" style="color:white">Aglaonema</h5>
+      <p class="card-text" style="color: white;">Memiliki Manfaat serta tekstur yang sangat enak untuk dipandang</p>
+      <a href="#" class="btn btn-primary">Beli Sekarang !</a>
+    </div>
+    <div class="card-body" style="width: 400px; height: 200px;">
+        <h5 class="card-title" style="color:white">Homalomena</h5>
+        <p class="card-text" style="color: white;">Tumbuhan yang berasal dari daerah hutan amazon ini memiliki manfaat yang sangat luar biasa</p>
+        <a href="#" class="btn btn-primary">Beli Sekarang !</a>
+      </div>
+      <div class="card-body" style="width: 400px; height: 200px;">
+        <h5 class="card-title" style="color:white">Monstera</h5>
+        <p class="card-text" style="color: white;">Saatnya anda memiliki tanaman yang memiliki kualitas bermanfaat beserta tekstur nya yang baik.</p>
+        <a href="#" class="btn btn-primary">Beli Sekarang !</a>
+      </div>
+  </div> 
+
+</div>
+  
+
+<br><br><br><br><br><br><br><br><section id="gallery"><h1 style="color: white; margin-left: 500px;">Gallery</h1></section>
+<div class="content-2">
+    <div class="box-1">
+        
+    </div>
+    <div class="box-2">
+
+    </div>
+    <div class="box-3">
+
+    </div>
+    <div class="box-4">
+
+    </div>
+</div>
+<div class="content-2">
+    <div class="box-5">
+        
+    </div>
+    <div class="box-6">
+
+    </div>
+    <div class="box-7">
+
+    </div>
+    <div class="box-8">
+
+    </div>
+</div>
+<div class="content-2">
+    <div class="box-9">
+        
+    </div>
+    <div class="box-10">
+
+    </div>
+    <div class="box-11">
+
+    </div>
+    <div class="box-12">
+
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><section id="contact"><h1 style="color: white; margin-left: 500px;">Contact</h1></section>
+
+
+
+</div>
+    
+
+<script>
+// Ambil semua elemen dengan class "nav-link"
+const navLinks = document.querySelectorAll('.nav-link active');
+
+// Tambahkan event listener untuk setiap link
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Mencegah perilaku default link
+
+    const targetId = this.getAttribute('href'); // Ambil target ID dari atribut href
+
+    // Cari elemen target berdasarkan ID
+    const targetElement = document.querySelector(targetId);
+
+    // Gulir ke elemen target
+    targetElement.scrollIntoView({
+      behavior: 'smooth' // Animated smooth scrolling
+    });
+  });
+});
+</script>
+  </body>
+</html>
